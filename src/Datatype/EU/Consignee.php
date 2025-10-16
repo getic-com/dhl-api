@@ -16,18 +16,6 @@ class Consignee extends \Mtc\Dhl\Datatype\AM\Consignee
             'comment' => 'Name of company / business',
             'minLength' => '0',
         ],
-        'BusinessPartyTypeCode' => [
-            'type' => 'string',
-            'required' => false,
-            'subobject' => false,
-            'comment' => 'Possible Values:
-                - BU (business)
-                - DC (direct consumer)
-                - GV (government)
-                - OT (other)
-                - PR (private)
-                - RE (reseller)',
-        ],
         'SuiteDepartmentName' => [
             'type' => 'SuiteDepartmentName',
             'required' => false,
@@ -127,6 +115,18 @@ class Consignee extends \Mtc\Dhl\Datatype\AM\Consignee
             'type' => 'Contact',
             'required' => false,
             'subobject' => true,
+        ],
+        'BusinessPartyTypeCode' => [
+            'type' => 'string',
+            'required' => false,
+            'subobject' => false,
+            'comment' => 'Possible Values:
+                - BU (business)
+                - DC (direct consumer)
+                - GV (government)
+                - OT (other)
+                - PR (private)
+                - RE (reseller)',
         ],
     ];
 }
