@@ -8,7 +8,7 @@
 Package should be installed through composer:
 
 ```bash
-composer require mtcmedia/dhl-api 
+composer require getic-com/dhl-api 
 ```
 
 Package requires a php min version of 7.1, however it has has been developed and tested on php 7.2.*  
